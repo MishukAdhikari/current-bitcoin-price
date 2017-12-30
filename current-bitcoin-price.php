@@ -3,7 +3,7 @@
 Plugin Name: Current Bitcoin Price
 Plugin URI:  https://developer.wordpress.org/plugins/current-bitcoin-price/
 Description: A simple plugin which helps you to show the Bitcoin Current Rates using coindesk API
-Version:     1.0
+Version:     1.0.1
 Author:      Mishuk Adhikari
 Author URI:  https://about.me/mishuk_adhikari
 License:     GPL2
