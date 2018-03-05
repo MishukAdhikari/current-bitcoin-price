@@ -3,7 +3,7 @@ Contributors: mishuk24
 Donate link: 
 Tags: current bitcoin price, bitcoin, bitcoin current price, btc live price, btc current price, btc
 Requires at least: 3.3
-Tested up to: 4.8
+Tested up to: 4.9.1
 Requires PHP: 5.2.4
 Stable tag: 4.3
 License: GPLv2 or later
@@ -52,8 +52,9 @@ Of course, you can see the current or live price of Bitcoin.
 2. The backend of the plugin.
 
 == Changelog ==
-
+1.0.1 Decimal change options added
 
 == Upgrade Notice ==
 
 version 1.0
+version 1.0.1
