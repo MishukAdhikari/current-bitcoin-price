@@ -1,24 +1,26 @@
 <?php
-/*
-Plugin Name: Current Bitcoin Price
-Plugin URI:  https://developer.wordpress.org/plugins/current-bitcoin-price/
-Description: A simple plugin which helps you to see Current Price of Bitcoin using coindesk API
-Version:     1.0.1
-Author:      Mishuk Adhikari
-Author URI:  https://about.me/mishuk_adhikari
-License:     GPL2
-License URI: https://www.gnu.org/licenses/gpl-2.0.html
-Text Domain: BTC Current Price
 
-
-Current Price Bitcoin is free software: you can redistribute it and/or modify
-it under the terms of the GNU General Public License as published by
-the Free Software Foundation, either version 2 of the License, or
-any later version.
- 
-You should have received a copy of the GNU General Public License
-along with Current Bitcoin  Price. If not, see https://www.gnu.org/licenses/gpl-2.0.html.
-*/
+/**
+ * Current Price Bitcoin is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation, either version 2 of the License, or
+ * any later version.
+ *
+ * @link              http://about.me/MishukAdhikari
+ * @since             1.0.0
+ * @package           Current_Bitcoin_Price
+ *
+ * Plugin Name:       Current Bitcoin Price
+ * Plugin URI:        http://wordpress.org/plugins/current-bitcoin-price
+ * Description:       A simple plugin which helps you to see Current Price of Bitcoin using coindesk API
+ * Version:           1.0.0
+ * Author:            Mishuk Adhikari
+ * Author URI:        http://about.me/MishukAdhikari
+ * License:           GPL-2.0+
+ * License URI:       http://www.gnu.org/licenses/gpl-2.0.txt
+ * Text Domain:       current-bitcoin-price
+ * Domain Path:       /languages
+ */
 
 //Exit if accessed directly
 if (!defined( 'ABSPATH' )) {
