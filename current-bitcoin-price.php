@@ -25,13 +25,24 @@ if (!defined( 'ABSPATH' )) {
 	exit;
 }
 
+
+/**
+ * The code that runs during plugin activation.
+ * This action is documented in includes/cbp_admin_area.php
+ */
+register_activation_hook( __FILE__, 'activate_current_bitcoin_price' );
+
+function activate_current_bitcoin_price() {
+	CBP_admin_area::cbp_default_value();
+}
+
 # Require files
 
 // Functions
-require_once 'functions.php';
+require_once ( plugin_dir_path( __FILE__ ). 'functions.php' );
 
 // Shortcodes
-require_once 'inc/cbp_shortcodes.php';
+require_once ( plugin_dir_path( __FILE__ ). 'includes/cbp_shortcodes.php' );
 
 // Admin Page Options
-require_once 'inc/cbp_admin_area.php';
+require_once ( plugin_dir_path( __FILE__ ). 'includes/cbp_admin_area.php');

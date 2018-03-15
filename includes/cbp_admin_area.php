@@ -13,7 +13,7 @@ class CBP_admin_area {
 	
 	}
 
-	public function cbp_default_value() {
+	public static function cbp_default_value() {
 		update_option('cbp_options', array("cbp_dec_dropdown" => 2, "cbp_tinny_checkbox" => "on" ));
 	}
 
