@@ -7,7 +7,6 @@ class CBP_admin_area {
 	
 	public function __construct() {
 
-		register_activation_hook('cbp_setting_sec', array( $this, 'cbp_default_value' ));
 		add_action('admin_init', array( $this, 'cbp_options_main' ) );
 		add_action('admin_menu', array( $this, 'cbp_option_page_setting' ));
 	
