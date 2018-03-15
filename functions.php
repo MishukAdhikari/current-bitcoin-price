@@ -16,7 +16,15 @@ class CBP_main_functions {
 		
 	}
 	
-	// Calling JavaScript and CSS file to the plugin
+	/**
+	 * Enqueue scripts
+	 *
+	 * @param string $handle Script name
+	 * @param string $src Script url
+	 * @param array $deps (optional) Array of script names on which this script depends
+	 * @param string|bool $ver (optional) Script version (used for cache busting), set to null to disable
+	 * @param bool $in_footer (optional) Whether to enqueue the script before </head> or before </body>
+	 */	
 	public function cbp_enqueuing_javascript_file() {
 
 		$CBP_admin = new CBP_admin_area();
@@ -54,7 +62,8 @@ class CBP_main_functions {
 		
 		if ((isset($_GET['post_type']) && $_GET['post_type'] == 'page')) :
 
-		array_push( $buttons, 'cbp_mce_button' );
+			array_push( $buttons, 'cbp_mce_button' );
+			
 		return $buttons;
 
 		endif;
