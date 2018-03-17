@@ -62,15 +62,15 @@ class CBP_admin_area {
 
 			<h2 style="text-decoration: underline; font-size: 26px;">How to use the plugin</h2>
 
-			<p>Use these shortcode if you want to see the current price of Bitcoin</p>
+			<p><?php _e( 'Use these shortcode if you want to see the current price of Bitcoin','current-bitcoin-price' )?></p>
 			
-			<p>For USD price Just Use <code>[current_btc_usd_price]</code></p>
-			<p>For EUR price Just Use <code>[current_btc_eur_price]</code></p>
-			<p>For GBP pound Just Use <code>[current_btc_gbp_pound]</code></p>
+			<p><?php _e( 'For USD price Just Use ','current-bitcoin-price' )?><code>[current_btc_usd_price]</code></p>
+			<p><?php _e( 'For EUR price Just Use ','current-bitcoin-price' )?><code>[current_btc_eur_price]</code></p>
+			<p><?php _e( 'For GBP pound Just Use ','current-bitcoin-price' )?><code>[current_btc_gbp_pound]</code></p>
 
-			<p style="font-size: 18px; font-weight: bold;">If you want to add directly with your code use the following id with an element</p>
+			<p style="font-size: 18px; font-weight: bold;"><?php _e( 'If you want to add directly with your code use the following id with an element','current-bitcoin-price' )?></p>
 
-			Example: <code> <?=htmlspecialchars('<div id="bcp_usd_btc"></div>')?> </code>
+			<?php _e( 'Example: ', 'current-bitcoin-price' )?><code> <?=htmlspecialchars('<div id="bcp_usd_btc"></div>')?> </code>
 
 			<p>For usd use this id <code>bcp_usd_btc</code></p>
 			<p>For gbp use this id <code>bcp_gbp_btc</code></p>
