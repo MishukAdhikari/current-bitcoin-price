@@ -3,7 +3,7 @@ Contributors: mishuk24
 Donate link: 
 Tags: current bitcoin price, bitcoin, bitcoin current price, btc live price, btc current price, btc
 Requires at least: 3.3
-Tested up to: 4.9.1
+Tested up to: 4.9.4
 Requires PHP: 5.2.4
 Stable tag: 4.3
 License: GPLv2 or later
@@ -15,12 +15,12 @@ A simple Bitcoin Real time price checker using coindesk api.
 
 This is a simple plugin which helps you to update real time Bitcoin Price by using <a href="https://api.coindesk.com">coindesk api</a>.
 
-If you want to see real time Bitcoin Price Follow the instructions bellow.
+If you need a ticker which is able to show the Current Bitcoin Price Follow the instructions bellow.
 
 A few notes about the sections above:
 
 * Install the plugin
-* Go to setting > Current Bitcoin  Price
+* Go to setting > Current Bitcoin Price
 * You will see a dashboard and simply use these shortcode.
 
 == Installation ==
@@ -39,11 +39,11 @@ Read more on the Wikipedia: https://en.wikipedia.org/wiki/Bitcoin
 
 = Why Need to see the live or current price of Bitcoin =
 
-Bitcoin current price helps you to see the live price of Bitcoin if you want to see the Bitcoin exchange rate you can easily see it on you own site by using this plugin.
+Current Bitcoin Price helps you to see the live price of Bitcoin if you want to see the Bitcoin exchange rate you can easily see it on you own site by using this plugin.
 
 = Can I see the live or current price of Bitcoin? =
 
-Of course, you can see the current or live price of Bitcoin.
+Of course, after installing and activate the plugin you can see the current price of Bitcoin.
 
 
 == Screenshots ==

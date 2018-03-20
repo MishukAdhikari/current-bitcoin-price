@@ -113,9 +113,9 @@ class CBP_admin_area {
 
 			<?php _e( 'Example: ', 'current-bitcoin-price' )?><code> <?=htmlspecialchars('<div id="bcp_usd_btc"></div>')?> </code>
 
-			<p><?php _e( 'For usd use this id','current-bitcoin-price' )?><code> bcp_usd_btc</code></p>
-			<p><?php _e( 'For gbp use this id','current-bitcoin-price' )?><code> bcp_gbp_btc</code></p>
-			<p><?php _e( 'For eur use this id','current-bitcoin-price' )?><code> bcp_eur_btc</code></p>
+			<p><?php _e( 'For usd use this id ','current-bitcoin-price' )?><code>bcp_usd_btc</code></p>
+			<p><?php _e( 'For gbp use this id ','current-bitcoin-price' )?><code>bcp_gbp_btc</code></p>
+			<p><?php _e( 'For eur use this id ','current-bitcoin-price' )?><code>bcp_eur_btc</code></p>
 			<p></p>
 			<p><?php _e( 'If you need more features like you want to add the price ticker on your WordPress menu contact me:','current-bitcoin-price' )?> <a href="mailto:mishuk.ad.bd@gmail.com">mishuk.ad.bd@gmail.com</a></p>
 			<p></p>
