@@ -19,8 +19,8 @@ class CBP_admin_area {
 	public function cbp_options_main(){
 		register_setting('cbp_setting_options', 'cbp_options' );
 		add_settings_section('main_section', 'Current Bitcoin Price', array( $this, 'cbp_setting_desc' ), 'cbp_setting_sec');
-		add_settings_field('cbp_decimal_cheque', 'Select how many digit you want to see after decimal<br><span style="font-weight:normal">Example: <span id="digit_cheque"></span></span>', array( $this, 'desimal_value_cheque' ), 'cbp_setting_sec', 'main_section');
-		add_settings_field('cbp_tinny_mce_cheque', 'Enable Button on TinnyMCE', array( $this, 'tinnymce_check' ), 'cbp_setting_sec', 'main_section');
+		add_settings_field('cbp_decimal_cheque', __( 'Select how many digit you want to see after decimal','current-bitcoin-price').'<br><span style="font-weight:normal">'.__( 'Example:','current-bitcoin-price').' <span id="digit_cheque"></span></span>', array( $this, 'desimal_value_cheque' ), 'cbp_setting_sec', 'main_section');
+		add_settings_field('cbp_tinny_mce_cheque', __( 'Enable Button on TinnyMCE', 'current-bitcoin-price' ), array( $this, 'tinnymce_check' ), 'cbp_setting_sec', 'main_section');
 	}
 
 	public function cbp_option_page_setting() {
@@ -28,7 +28,7 @@ class CBP_admin_area {
 	}
 
 	public function  cbp_setting_desc() {
-		echo '<span>Need more help? How to use the plugin? <a href="https://about.me/mishukadhikari" target="_blank" class="cbp_admin_modal">click here</a></span>';
+		echo '<span>'.__( 'Need more help? How to use the plugin?', 'current-bitcoin-price' ).' <a href="https://about.me/mishukadhikari" target="_blank" class="cbp_admin_modal">'.__( 'click here','current-bitcoin-price' ).'</a></span>';
 	}
 
 	public function  desimal_value_cheque() {
@@ -72,11 +72,11 @@ class CBP_admin_area {
 
 			<?php _e( 'Example: ', 'current-bitcoin-price' )?><code> <?=htmlspecialchars('<div id="bcp_usd_btc"></div>')?> </code>
 
-			<p>For usd use this id <code>bcp_usd_btc</code></p>
-			<p>For gbp use this id <code>bcp_gbp_btc</code></p>
-			<p>For eur use this id <code>bcp_eur_btc</code></p>
+			<p><?php _e( 'For usd use this id','current-bitcoin-price' )?><code> bcp_usd_btc</code></p>
+			<p><?php _e( 'For gbp use this id','current-bitcoin-price' )?><code>bcp_gbp_btc</code></p>
+			<p><?php _e( 'For eur use this id','current-bitcoin-price' )?> <code>bcp_eur_btc</code></p>
 			<p></p>
-			<p>If you need more features like you want to add the price ticker on your WordPress menu contact me: <a href="mailto:mishuk.ad.bd@gmail.com">mishuk.ad.bd@gmail.com</a></p>
+			<p><?php _e( 'If you need more features like you want to add the price ticker on your WordPress menu contact me:','current-bitcoin-price' )?> <a href="mailto:mishuk.ad.bd@gmail.com">mishuk.ad.bd@gmail.com</a></p>
 			<p></p>
 		</div>
 	</div>

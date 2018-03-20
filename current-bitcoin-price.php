@@ -13,7 +13,7 @@
  * Plugin Name:       Current Bitcoin Price
  * Plugin URI:        http://wordpress.org/plugins/current-bitcoin-price
  * Description:       A simple plugin which helps you to see Current Price of Bitcoin using coindesk API
- * Version:           1.0.0
+ * Version:           1.0.1
  * Author:            Mishuk Adhikari
  * Author URI:        http://about.me/MishukAdhikari
  * License:           GPL-2.0+
