@@ -1,9 +1,9 @@
 === Current Bitcoin Price ===
 Contributors: mishuk24
-Donate link: 
+Donate link:
 Tags: current bitcoin price, bitcoin, bitcoin current price, btc live price, btc current price, btc
 Requires at least: 3.3
-Tested up to: 4.9.5
+Tested up to: 4.9.7
 Requires PHP: 5.2.4
 Stable tag: 4.3
 License: GPLv2 or later

@@ -6,23 +6,24 @@
  * main funciton of the plugin
  */
 class CBP_main_functions {
-	
+
 	public function __construct() {
-		
+
 		add_action( 'wp_enqueue_scripts', array( $this, 'cbp_enqueuing_javascript_file' ) );
+
 		add_action( 'admin_head', array( $this, 'cbp_tinnymce_button' ) );
-		
+
 		global $pagenow;
-		
+
 		if (( $pagenow == 'options-general.php' ) && ($_GET['page'] == 'cbp-admin-dashboard')) {
 			add_action( 'admin_enqueue_scripts', array( $this, 'cbp_admin_assets' ) );
 		}
-		
+
 	}
-	
+
 	/**
 	 * Adding js and css file
-	 * 
+	 *
 	 * @return void
 	 */
 	public function cbp_enqueuing_javascript_file() {
@@ -35,7 +36,7 @@ class CBP_main_functions {
 
 	/**
 	 * Js and Css for backend
-	 * 
+	 *
 	 * @return void
 	 */
 	public function cbp_admin_assets() {
@@ -45,13 +46,13 @@ class CBP_main_functions {
 
 	/**
 	 * TinnyMCE button
-	 * 
+	 *
 	 * @return void
 	 */
 	public function cbp_tinnymce_button() {
 
 		$tinny_checkbox = get_option('cbp_options')['cbp_tinny_checkbox'];
-		
+
 		if ( $tinny_checkbox == 'on' ) {
 			add_filter( 'mce_external_plugins', array( $this, 'button_for_tinymce_plugin' ) );
 			add_filter( 'mce_buttons', array( $this, 'register_mce_button' ) );
@@ -60,33 +61,30 @@ class CBP_main_functions {
 
 	/**
 	 * Declaring button
-	 * 
+	 *
 	 * @param button array
 	 * @return array
 	 */
 	public function button_for_tinymce_plugin( $plugin_array ) {
 
 		$plugin_array['cbp_mce_button'] = plugins_url( '/assets/js/cbp-tinnymce-custom-button.js', __FILE__ );
-		
+
 		return $plugin_array;
 	}
 
 	/**
 	 * Adding tinny button
 	 * if is page
-	 * 
+	 *
 	 * @param string
 	 * @return array
 	 */
 	public function register_mce_button( $buttons ) {
-		
-		if ((isset($_GET['post_type']) && $_GET['post_type'] == 'page')) :
 
 			array_push( $buttons, 'cbp_mce_button' );
-			
+
 		return $buttons;
 
-		endif;
 	}
 }
 
