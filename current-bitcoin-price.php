@@ -48,3 +48,6 @@ require_once ( plugin_dir_path( __FILE__ ). 'includes/cbp_shortcodes.php' );
 
 // Admin Page Options
 require_once ( plugin_dir_path( __FILE__ ). 'includes/cbp_admin_area.php');
+
+// Cryptocurrency Widgets
+require_once ( plugin_dir_path( __FILE__ ). 'includes/class.cryptocurrency_ticker.php');
